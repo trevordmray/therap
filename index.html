@@ -1,505 +1,103 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RealSource App Portal</title>
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/trevordmray/rsappslauncher/main/thumbnail.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lexend:wght@600&display=swap" rel="stylesheet">
+    <title>RealSource Properties LLC - Merger Update</title>
     <style>
-        /* Apply the Inter font globally */
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            line-height: 1.6;
         }
-        /* Custom font for the main header title */
-        .header-title {
-            font-family: 'Lexend', sans-serif;
+
+        .container {
+            background-color: #ffffff;
+            padding: 50px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            max-width: 550px;
+            text-align: center;
+            margin: 20px;
         }
-        /* Custom scrollbar for a cleaner look */
-        ::-webkit-scrollbar {
-            width: 8px;
+
+        .logo {
+            max-width: 280px;
+            height: auto;
+            margin-bottom: 40px;
         }
-        ::-webkit-scrollbar-thumb {
-            background-color: #94a3b8; /* Slate 400 */
-            border-radius: 4px;
+
+        .merger-section {
+            font-size: 1.15rem;
+            color: #2d3748;
+            margin-bottom: 35px;
+            padding-bottom: 35px;
+            border-bottom: 1px solid #edf2f7;
         }
-        /* New scrollbar style for dark mode */
-        .dark ::-webkit-scrollbar-thumb {
-            background-color: #475569; /* Slate 600 */
+
+        .merger-section strong {
+            color: #1a365d;
+        }
+
+        .employee-section {
+            font-size: 1rem;
+            color: #4a5568;
+        }
+
+        .employee-section p {
+            margin-bottom: 20px;
+        }
+
+        a.email-link {
+            color: #2c5282;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a.email-link:hover {
+            text-decoration: underline;
+        }
+
+        .btn-sharepoint {
+            display: inline-block;
+            background-color: #0078d4; /* SharePoint Blue */
+            color: #ffffff;
+            padding: 12px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .btn-sharepoint:hover {
+            background-color: #005a9e;
+            color: #ffffff;
         }
     </style>
-    <script>
-        // Configure Tailwind CSS
-        tailwind.config = {
-            // Enable Tailwind's class-based dark mode strategy
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        'primary-blue': '#0078D4',
-                        'dark-text': '#1f2937',
-                    }
-                }
-            }
-        }
-    </script>
 </head>
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-300 min-h-screen transition-colors duration-300">
+<body>
 
-    <div class="bg-red-600 text-white text-center px-4 py-3 shadow-md relative z-30">
-        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-medium space-y-1 sm:space-y-0 sm:space-x-2">
-            <span>
-                <i class="fas fa-exclamation-triangle mr-1"></i>
-                <strong>IMPORTANT:</strong> This portal is scheduled to shut down on <strong>12/31/2025</strong>.
-            </span>
-            <span>
-                For more info, please contact <a href="mailto:trevor@realsource.net" class="underline text-red-100 hover:text-white transition-colors">trevor@realsource.net</a>.
-            </span>
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/trevordmray/realsource.net/main/RS_Stacked_2Color.png" alt="RealSource Logo" class="logo">
+
+        <div class="merger-section">
+            <p>As of <strong>December 31, 2025</strong>, RealSource Properties LLC has merged with <strong>Cottonwood Communities</strong>.</p>
+            <p>For information on this merger, please reach out to <a href="mailto:info@realsource.net" class="email-link">info@realsource.net</a></p>
+        </div>
+
+        <div class="employee-section">
+            <p><strong>RealSource Residential employees</strong><br>
+            Please use SharePoint to access intranet resources.</p>
+            <a href="https://realsource451.sharepoint.com" class="btn-sharepoint" target="_blank">Access SharePoint</a>
         </div>
     </div>
-
-    <main class="p-4 sm:p-8 pb-24">
-        <header class="max-w-4xl mx-auto mb-10 text-center">
-            <img src="https://raw.githubusercontent.com/trevordmray/rsappslauncher/main/realsourcelogo.png" alt="RealSource Logo" class="mx-auto h-24 w-auto mb-4 block dark:hidden">
-            <img src="https://raw.githubusercontent.com/trevordmray/rsappslauncher/main/realsourcelogorev.png" alt="RealSource Logo" class="mx-auto h-24 w-auto mb-4 hidden dark:block">
-            
-            <h1 class="header-title text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary-blue to-sky-500 mt-6 mb-2">
-                Application Hub
-            </h1>
-            <p class="text-lg text-gray-500 dark:text-gray-400">
-                SSO has been discontinued, you can read more about this update <a href="https://realsource451.sharepoint.com/:w:/g/EZGWxPx5pGVJqIhXIhDQvGQBEjbzLIbZvLmAdjn1O80qhw" style="color: blue; text-decoration: underline;">here</a>.
-            </p>
-        </header>
-
-        <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="appGrid">
-            </div>
-
-        <footer class="max-w-4xl mx-auto mt-12 text-center">
-            <p class="text-xs text-gray-400 dark:text-gray-500 leading-relaxed">
-                This portal and its contents are the exclusive property of RealSource Properties and are intended for authorized employees only. Unauthorized access, use, or distribution of any information contained within this system is strictly prohibited and may result in legal action. By proceeding, you acknowledge and agree to abide by all company policies regarding the use of internal systems and confidential data. If you are not an authorized user, you must exit this portal immediately.
-            </p>
-        </footer>
-    </main>
-    
-    <div class="fixed bottom-0 left-0 w-full p-2 sm:p-4 bg-gray-100/90 dark:bg-gray-900/90 backdrop-blur-sm border-t border-gray-200 dark:border-gray-700 z-40">
-        <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-x-2">
-                <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm px-4 py-2.5 transition flex items-center gap-x-2 font-medium">
-                    <i id="theme-toggle-light-icon" class="fa-solid fa-sun hidden text-xl"></i>
-                    <i id="theme-toggle-dark-icon" class="fa-solid fa-moon hidden text-xl"></i>
-                    <span id="theme-toggle-text" class="hidden sm:inline"></span>
-                </button>
-                <button id="add-app-button" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm px-4 py-2.5 transition flex items-center gap-x-2 font-medium">
-                    <i class="fa-solid fa-plus text-xl"></i>
-                    <span class="hidden sm:inline">Add App</span>
-                </button>
-            </div>
-
-            <button id="credits-button" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-blue">
-                <i class="fas fa-info-circle text-gray-500 dark:text-gray-400 text-2xl"></i>
-            </button>
-        </div>
-    </div>
-
-    <div id="appModal" class="fixed inset-0 bg-gray-900 bg-opacity-70 flex items-center justify-center p-4 z-50 hidden transition-opacity duration-300 ease-out opacity-0">
-        <div id="appModalContent" class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-lg p-6 md:p-8 transform transition-transform duration-300 ease-out scale-95">
-            <div class="flex justify-between items-start mb-4">
-                <h2 id="modalTitle" class="text-2xl font-bold text-dark-text dark:text-white"></h2>
-                <button data-modal-hide="appModal" class="text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition">
-                    <i class="fas fa-times text-xl"></i>
-                </button>
-            </div>
-            <div id="instructionBox" class="p-4 rounded-lg mb-6">
-                <p id="modalInstructions" class="text-base"></p>
-            </div>
-            <a id="modalLink" class="w-full inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-primary-blue hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-blue transition-all duration-150 ease-in-out">Continue to Application</a>
-            <button data-modal-hide="appModal" id="modalCloseBtn" class="w-full mt-3 px-6 py-3 text-base font-medium rounded-lg text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 focus:outline-none transition-all duration-150 ease-in-out">Understood / Close</button>
-        </div>
-    </div>
-
-    <div id="addAppModal" class="fixed inset-0 bg-gray-900 bg-opacity-70 flex items-center justify-center p-4 z-50 hidden transition-opacity duration-300 ease-out opacity-0">
-        <div id="addAppModalContent" class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-lg p-6 md:p-8 transform transition-transform duration-300 ease-out scale-95">
-            <div class="flex justify-between items-start mb-4">
-                <h2 class="text-2xl font-bold text-dark-text dark:text-white">Add a Custom App</h2>
-                <button data-modal-hide="addAppModal" class="text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition">
-                    <i class="fas fa-times text-xl"></i>
-                </button>
-            </div>
-            <form id="addAppForm">
-                <div class="space-y-4">
-                    <div>
-                        <label for="appName" class="block text-sm font-medium text-gray-700 dark:text-gray-300">App Name</label>
-                        <input type="text" id="appName" name="appName" required class="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-sm">
-                    </div>
-                    <div>
-                        <label for="appUrl" class="block text-sm font-medium text-gray-700 dark:text-gray-300">App URL</label>
-                        <input type="url" id="appUrl" name="appUrl" placeholder="https://example.com" required class="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-sm">
-                    </div>
-                </div>
-                <div class="mt-6 flex justify-end gap-x-3">
-                     <button type="button" data-modal-hide="addAppModal" class="px-4 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 focus:outline-none">Cancel</button>
-                    <button type="submit" class="inline-flex justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white bg-primary-blue hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-blue">Save App</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    
-    <div id="aliasModal" class="fixed inset-0 bg-gray-900 bg-opacity-70 flex items-center justify-center p-4 z-50 hidden transition-opacity duration-300 ease-out opacity-0">
-        <div id="aliasModalContent" class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-lg p-6 md:p-8 transform transition-transform duration-300 ease-out scale-95">
-            <div class="flex justify-between items-start mb-4">
-                <h2 class="text-2xl font-bold text-dark-text dark:text-white">Verification Required</h2>
-                <button data-modal-hide="aliasModal" class="text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition">
-                    <i class="fas fa-times text-xl"></i>
-                </button>
-            </div>
-            <p class="text-gray-600 dark:text-gray-400 mb-4">To access this resource, please enter your employee alias. (e.g. jdoe for Jane Doe)</p>
-            <form id="aliasForm">
-                <div class="space-y-4">
-                    <div>
-                        <label for="aliasName" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Alias</label>
-                        <input type="text" id="aliasName" name="aliasName" required class="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-sm">
-                    </div>
-                     <div id="aliasError" class="text-sm text-red-600 dark:text-red-400 hidden"></div>
-                </div>
-                <div class="mt-6 flex justify-end gap-x-3">
-                     <button type="button" data-modal-hide="aliasModal" class="px-4 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 focus:outline-none">Cancel</button>
-                    <button type="submit" class="inline-flex justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white bg-primary-blue hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-blue">
-                        <span id="aliasSubmitText">Verify & Continue</span>
-                        <i id="aliasSpinner" class="fa-solid fa-spinner fa-spin hidden ml-2"></i>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-
-    <div id="creditsModal" class="fixed inset-0 bg-gray-900 bg-opacity-70 flex items-center justify-center p-4 z-50 hidden transition-opacity duration-300 ease-out opacity-0">
-        <div id="creditsModalContent" class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-lg p-6 md:p-8 transform transition-transform duration-300 ease-out scale-95">
-            <div class="flex justify-between items-start mb-4">
-                <h2 class="text-2xl font-bold text-dark-text dark:text-white">Credits & Acknowledgements</h2>
-                <button data-modal-hide="creditsModal" class="text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition">
-                    <i class="fas fa-times text-xl"></i>
-                </button>
-            </div>
-            <p class="text-base text-gray-700 dark:text-gray-300 mb-6">Portal created and designed by <strong>Trevor Ray</strong> for <strong>RealSource Properties</strong>.</p>
-            <h3 class="text-lg font-semibold text-dark-text dark:text-white mb-3">Open Source Acknowledgements:</h3>
-            <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 space-y-2">
-                <li><strong>Tailwind CSS:</strong> A utility-first CSS framework for rapid UI development.</li>
-                <li><strong>Font Awesome:</strong> The web's most popular icon set and toolkit.</li>
-                <li><strong>Google Fonts (Lexend & Inter):</strong> High-quality, open-source fonts for the web.</li>
-            </ul>
-            <button data-modal-hide="creditsModal" class="w-full mt-8 px-6 py-3 text-base font-medium rounded-lg text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 focus:outline-none transition-all duration-150 ease-in-out">Close</button>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-
-            // --- 1. DATA & CONSTANTS ---
-            let apps = [];
-            let appToAuth = null; // Holds the app object that needs authentication
-            const defaultApps = [
-                { name: "Entrata", icon: "fa-solid fa-building", link: "https://realsourcemgmt.entrata.com/", instructions: "Log in using your **Alias and password** (Use \"Reset Password\" to get a new password after SSO phase out)<br><br>Example for Jane Doe:<br>Username: **jdoe**<br>Password: (enter known password or reset password using email)" },
-                { name: "Outlook", icon: "fa-solid fa-envelope", link: "https://outlook.office.com", instructions: "To log in, use your **RealSource Outlook Email and Password**" },
-                { name: "Teams", icon: "fa-solid fa-comments", link: "https://teams.microsoft.com/v2/", instructions: "To log in, use your **RealSource Outlook Email and Password**" },
-                { name: "Inflection/Time Clock", icon: "fa-solid fa-clock", link: "https://secure3.yourpayrollhr.com/ta/IHR0762.clock", instructions: "Log in using your **Alias and password** (Select Forgot your password to reset your password after SSO Phase out)<br><br>Example for Jane Doe:<br>Username: **jdoe**<br>Password: (enter known password or reset password)" },
-                { name: "SharePoint", icon: "fa-brands fa-microsoft", link: "https://realsource451.sharepoint.com/", instructions: "To log in, use your **RealSource Outlook Email and Password**" },
-                { name: "EliseAI", icon: "fa-solid fa-robot", link: "https://app.meetelise.com", instructions: "Log in using your **Alias and password** (Use \"Reset Password\" to get a new password after SSO phase out)" },
-                { name: "Motivosity", icon: "fa-solid fa-gift", link: "https://www.motivosity.com/", instructions: "Enter **Alias Email (Alias@realsource.net)** and Enter Password. (Use Reset password after SSO Phase Out). (You may also request a one time code for login)." },
-                { name: "Concur Expense", icon: "fa-solid fa-credit-card", instructions: "**This application has been shut down.**" },
-                { name: "LRO", icon: "fa-solid fa-chart-line", link: "https://ao.realpage.com/ysconfig/app/login", instructions: "Use **email and password** (Unchanged after SSO Phase Out)" },
-                { name: "DocuVerus", icon: "fa-solid fa-file-signature", link: "https://app.dvapply.com./ats/login", instructions: "Use **email and password** (Unchanged after SSO Phase Out)" },
-                { name: "Reputation", icon: "fa-solid fa-globe", link: "https://app.reputation.com/auth", instructions: "Use **email and password** (Unchanged after SSO Phase Out)" },
-                { name: "GraceHill", icon: "fa-solid fa-book", instructions: "**This application has been shut down.**" },
-                { name: "theRAP Forms", icon: "fa-solid fa-file", requiresAuth: true }, // Link removed for security
-                { name: "Property Contacts", icon: "fa-solid fa-address-book", requiresAuth: true }, // Link removed for security
-                { name: "Support", icon: "fa-solid fa-headset", instructions: "<strong>This application has been shut down.</strong> Please contact the following people:<br><br><strong>Operations and Training Matters:</strong><br>Kim Humphery - <a href=\"mailto:kim@realsource.net\" style=\"color:blue; text-decoration:underline;\">kim@realsource.net</a> (Will respond after hours)<br><br><strong>IT, Urgent Entrata, Marketing, Corporate Clerical, and Accounting Matters:</strong><br>Trevor Ray - <a href=\"mailto:trevor@realsource.net\" style=\"color:blue; text-decoration:underline;\">trevor@realsource.net</a><br><br><strong>Accounting:</strong><br>Sam Christian - <a href=\"mailto:sam@realsource.net\" style=\"color:blue; text-decoration:underline;\">sam@realsource.net</a> (Will respond after hours)<br><br><strong>Entrata:</strong><br>Jennifer Harris - <a href=\"mailto:jennifer@realsource.net\" style=\"color:blue; text-decoration:underline;\">jennifer@realsource.net</a> (Will respond after hours)<br><br><strong>HR:</strong><br>Kim Baker - <a href=\"mailto:kbaker@realsource.net\" style=\"color:blue; text-decoration:underline;\">kbaker@realsource.net</a>" },
-            ];
-
-            // --- 2. DOM ELEMENT SELECTIONS (Consolidated) ---
-            const root = document.documentElement;
-            const DOMElements = {
-                appGrid: document.getElementById("appGrid"),
-                
-                // Theme elements
-                themeToggleBtn: document.getElementById('theme-toggle'),
-                themeToggleLightIcon: document.getElementById('theme-toggle-light-icon'),
-                themeToggleDarkIcon: document.getElementById('theme-toggle-dark-icon'),
-                themeToggleText: document.getElementById('theme-toggle-text'),
-
-                // Modals & Triggers
-                creditsBtn: document.getElementById("credits-button"),
-                addAppBtn: document.getElementById("add-app-button"),
-                appModal: document.getElementById("appModal"),
-                addAppModal: document.getElementById("addAppModal"),
-                creditsModal: document.getElementById("creditsModal"),
-                aliasModal: document.getElementById("aliasModal"),
-                addAppForm: document.getElementById("addAppForm"),
-                aliasForm: document.getElementById("aliasForm"),
-                aliasError: document.getElementById("aliasError"),
-                aliasSubmitText: document.getElementById("aliasSubmitText"),
-                aliasSpinner: document.getElementById("aliasSpinner"),
-                
-                // App Modal Content
-                modalTitle: document.getElementById("modalTitle"),
-                modalInstructions: document.getElementById("modalInstructions"),
-                modalLink: document.getElementById("modalLink"),
-                modalCloseBtn: document.getElementById("modalCloseBtn"),
-                instructionBox: document.getElementById("instructionBox"),
-            };
-
-
-            // --- 3. FUNCTIONS ---
-
-            const loadApps = () => {
-                const storedApps = localStorage.getItem('userApps');
-                if (storedApps) {
-                    apps = JSON.parse(storedApps);
-                } else {
-                    apps = defaultApps;
-                    saveApps();
-                }
-            };
-
-            const saveApps = () => {
-                localStorage.setItem('userApps', JSON.stringify(apps));
-            };
-            
-            const showModal = (modalElement) => {
-                if (!modalElement) return;
-                const contentElement = modalElement.querySelector('div[id$="ModalContent"]');
-                modalElement.classList.remove('hidden');
-                setTimeout(() => {
-                    modalElement.classList.remove('opacity-0');
-                    if (contentElement) contentElement.classList.remove('scale-95');
-                }, 10);
-            };
-
-            const hideModal = (modalElement) => {
-                if (!modalElement) return;
-                const contentElement = modalElement.querySelector('div[id$="ModalContent"]');
-                modalElement.classList.add('opacity-0');
-                if (contentElement) contentElement.classList.add('scale-95');
-                setTimeout(() => {
-                    modalElement.classList.add('hidden');
-                     if (modalElement === DOMElements.aliasModal) {
-                        appToAuth = null; // Reset auth target when modal is hidden
-                    }
-                }, 300);
-            };
-            
-            const showAppInfoModal = (app) => {
-                DOMElements.modalTitle.innerHTML = app.name;
-                DOMElements.modalInstructions.innerHTML = app.instructions.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-                DOMElements.modalLink.href = app.link || '#';
-                
-                DOMElements.instructionBox.className = 'p-4 rounded-lg mb-6 bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 dark:border-yellow-600';
-                DOMElements.modalInstructions.className = 'text-base text-yellow-900 dark:text-yellow-300';
-                
-                if (app.link) {
-                    DOMElements.modalLink.classList.remove('hidden');
-                    DOMElements.modalCloseBtn.textContent = "Not now / Close";
-                } else {
-                    DOMElements.modalLink.classList.add('hidden');
-                    DOMElements.modalCloseBtn.textContent = "Understood / Close";
-                }
-                
-                showModal(DOMElements.appModal);
-            };
-            
-            const showAliasModal = () => {
-                DOMElements.aliasError.classList.add('hidden');
-                DOMElements.aliasError.textContent = '';
-                DOMElements.aliasForm.reset();
-                showModal(DOMElements.aliasModal);
-            };
-
-            // --- Theme Management ---
-            const updateThemeUI = (isDark) => {
-                DOMElements.themeToggleDarkIcon.classList.toggle('hidden', !isDark);
-                DOMElements.themeToggleLightIcon.classList.toggle('hidden', isDark);
-                DOMElements.themeToggleText.textContent = isDark ? 'Toggle Light Mode' : 'Toggle Dark Mode';
-            };
-            
-            const applyTheme = (isDark) => {
-                root.classList.toggle('dark', isDark);
-                updateThemeUI(isDark);
-            };
-
-            // --- App Tile Rendering ---
-            const renderAppTiles = () => {
-                DOMElements.appGrid.innerHTML = ''; 
-                const activeTileClasses = "group hover:-translate-y-1 hover:bg-blue-50 dark:hover:bg-gray-700";
-
-                apps.forEach((app, index) => {
-                    const tileWrapper = document.createElement("div");
-                    tileWrapper.className = "relative";
-                    
-                    const tile = document.createElement("a");
-                    tile.className = `p-6 flex flex-col items-center justify-center bg-white dark:bg-gray-800 rounded-xl shadow-md transition-all duration-300 ease-in-out cursor-pointer hover:shadow-lg ${activeTileClasses} h-full`;
-                    tile.innerHTML = `<i class="${app.icon} text-4xl text-primary-blue mb-4 transition-all duration-300"></i><h3 class="text-lg font-semibold text-dark-text dark:text-gray-200 text-center transition-all duration-300">${app.name}</h3>`;
-                    
-                    if (app.requiresAuth) {
-                        tile.href = "#";
-                        tile.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            appToAuth = app; // Set which app needs auth
-                            showAliasModal();
-                        });
-                    } else if (app.directLink || app.isCustom) {
-                        tile.href = app.link;
-                        tile.target = "_blank";
-                        tile.rel = "noopener noreferrer";
-                    } else {
-                        tile.href = "#";
-                        tile.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            showAppInfoModal(app);
-                        });
-                    }
-
-                    tileWrapper.appendChild(tile);
-
-                    if (app.isCustom) {
-                        const deleteButton = document.createElement("button");
-                        deleteButton.className = "absolute top-2 right-2 w-7 h-7 bg-red-500 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-red-700";
-                        deleteButton.innerHTML = `<i class="fas fa-times text-sm"></i>`;
-                        deleteButton.onclick = (e) => {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            if (confirm(`Are you sure you want to delete "${app.name}"?`)) {
-                                apps.splice(index, 1);
-                                saveApps();
-                                renderAppTiles();
-                            }
-                        };
-                        tileWrapper.appendChild(deleteButton);
-                    }
-
-                    DOMElements.appGrid.appendChild(tileWrapper);
-                });
-            };
-
-            const handleAddApp = (event) => {
-                event.preventDefault();
-                const formData = new FormData(DOMElements.addAppForm);
-                const newApp = {
-                    name: formData.get('appName'),
-                    link: formData.get('appUrl'),
-                    icon: 'fa-solid fa-star', // Default icon
-                    isCustom: true, // Mark as a custom app
-                };
-                apps.push(newApp);
-                saveApps();
-                renderAppTiles();
-                DOMElements.addAppForm.reset();
-                hideModal(DOMElements.addAppModal);
-            };
-            
-            const handleAliasSubmit = async (event) => {
-                event.preventDefault();
-                if (!appToAuth) return; // Safety check
-
-                const aliasInput = DOMElements.aliasForm.elements.aliasName;
-                const enteredAlias = aliasInput.value.trim().toLowerCase();
-                
-                DOMElements.aliasSubmitText.classList.add('hidden');
-                DOMElements.aliasSpinner.classList.remove('hidden');
-                DOMElements.aliasError.classList.add('hidden');
-
-                const aliasUrl = 'https://raw.githubusercontent.com/trevordmray/rsappslauncher/main/aliasnames.csv';
-
-                try {
-                    const response = await fetch(aliasUrl);
-                    if (!response.ok) throw new Error('Could not fetch verification file.');
-                    
-                    const csvText = await response.text();
-                    const lines = csvText.split('\n').filter(line => line.trim() !== '');
-                    
-                    if (lines.length < 3) throw new Error('Verification file is malformed.');
-                    
-                    const contactsLink = lines[0].trim();
-                    const formsLink = lines[1].trim();
-                    const validAliases = lines.slice(2).map(name => name.trim().toLowerCase());
-
-                    if (validAliases.includes(enteredAlias)) {
-                        let targetLink = '';
-                        if (appToAuth.name === 'Property Contacts') {
-                            targetLink = contactsLink;
-                        } else if (appToAuth.name === 'theRAP Forms') {
-                            targetLink = formsLink;
-                        }
-                        
-                        if(targetLink) {
-                            window.open(targetLink, '_blank');
-                        }
-                        
-                        hideModal(DOMElements.aliasModal);
-                    } else {
-                        DOMElements.aliasError.textContent = 'Invalid alias. Please try again.';
-                        DOMElements.aliasError.classList.remove('hidden');
-                    }
-                } catch (error) {
-                    DOMElements.aliasError.textContent = 'Verification failed. Check connection or contact support.';
-                    DOMElements.aliasError.classList.remove('hidden');
-                } finally {
-                    DOMElements.aliasSubmitText.classList.remove('hidden');
-                    DOMElements.aliasSpinner.classList.add('hidden');
-                }
-            };
-
-            // --- 4. EVENT LISTENER SETUP AND THEME INITIALIZATION ---
-            const setupInteraction = () => {
-                
-                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                applyTheme(prefersDark);
-
-                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-                    applyTheme(event.matches);
-                });
-
-                DOMElements.themeToggleBtn.addEventListener('click', () => {
-                    applyTheme(!root.classList.contains('dark'));
-                });
-
-                DOMElements.creditsBtn.addEventListener('click', () => showModal(DOMElements.creditsModal));
-                DOMElements.addAppBtn.addEventListener('click', () => showModal(DOMElements.addAppModal));
-                DOMElements.addAppForm.addEventListener('submit', handleAddApp);
-                DOMElements.aliasForm.addEventListener('submit', handleAliasSubmit);
-                
-                document.querySelectorAll('[data-modal-hide]').forEach(button => {
-                    const modalId = button.getAttribute('data-modal-hide');
-                    const modalEl = document.getElementById(modalId);
-                    if (modalEl) {
-                        button.addEventListener('click', () => hideModal(modalEl));
-                    }
-                });
-
-                [DOMElements.appModal, DOMElements.creditsModal, DOMElements.addAppModal, DOMElements.aliasModal].forEach(modalEl => {
-                    if (modalEl) {
-                        modalEl.addEventListener('click', (event) => {
-                            if (event.target === modalEl) {
-                                hideModal(modalEl);
-                            }
-                        });
-                    }
-                });
-            };
-
-            // --- 5. INITIALIZATION ---
-            const init = () => {
-                loadApps();
-                renderAppTiles();
-                setupInteraction();
-            };
-
-            init();
-        });
-    </script>
 
 </body>
 </html>
